@@ -283,6 +283,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 176, ../scss/_ui.scss */
 .ui-slider.ui-state-disabled .ui-slider-handle,
 .ui-slider.ui-state-disabled .ui-slider-range {
+  -webkit-filter: inherit;
   filter: inherit;
 }
 
@@ -422,8 +423,6 @@ body:after {
   display: block;
   height: auto;
   max-width: inherit;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 /* line 68, ../scss/_lightbox.scss */
@@ -439,8 +438,6 @@ body:after {
   width: 250px;
   height: 250px;
   margin: 0 auto;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -482,8 +479,6 @@ body:after {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
   text-shadow: rgba(255, 255, 255, 0.5) 0 0 30px;
 }
@@ -527,8 +522,6 @@ body:after {
   float: left;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
@@ -545,8 +538,6 @@ body:after {
   float: right;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
@@ -563,11 +554,7 @@ body:after {
   padding-top: 5px;
   *zoom: 1;
   width: 100%;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 /* line 38, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -623,8 +610,6 @@ body:after {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
   opacity: 0.7;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -716,7 +701,6 @@ a:hover, a:link:hover, a:visited:hover {
 .lbox {
   display: block;
   border: 9px solid #fff;
-  -moz-box-shadow: 1px 1px 0 0 #96c4ea;
   -webkit-box-shadow: 1px 1px 0 0 #96c4ea;
   box-shadow: 1px 1px 0 0 #96c4ea;
 }
