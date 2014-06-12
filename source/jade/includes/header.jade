@@ -1,0 +1,29 @@
+header
+	.container
+		a.header__logo(href="/")
+			img(src="i/logo.svg", onerror="this.onerror=null; this.src='i/logo.png'")
+		.header__search
+			form
+				input#search(type="text", placeholder="Поиск по сайту")
+				label(for='search')
+					i.fa.fa-search
+		.header__contacts
+			span Справки по телефону:
+			h1 8 (423) 290 65 47
+			a(href="#")
+				i.fa.fa-undo.fa-fw
+				|Обратный звонок
+	.container
+		nav
+			ul
+				li.nav__listitem: a.nav__item(href='#') Главная
+				li.nav__listitem.dropdown
+					a.nav__item(href='#') Продукция
+					ul.nav-block
+						li: a(href='#') Офисные принадлежности
+						li: a(href='#') Подарочная продукция
+						li: a(href='#') Бумага
+						li: a(href='#') Электроника
+				li.nav__listitem: a.nav__item(href='#') Производство
+				li.nav__listitem: a.nav__item(href='#') О компании
+				li.nav__listitem: a.nav__item(href='#') Контакты

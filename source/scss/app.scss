@@ -12,6 +12,7 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "compass/reset";
+@import 'jeet/index';
 
 // main
 @import "settings";
@@ -35,7 +36,7 @@
 }
 
 body {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: 'Clear Sans', Helvetica, Arial, sans-serif;
 	background: $bg-color;
 	line-height: 150%;
 	font-size: $text-size;
