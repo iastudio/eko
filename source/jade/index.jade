@@ -6,12 +6,51 @@ html(lang='ru').no-js
   head
     include includes/head
     //- Uncomment for LiveReload
-    | <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    //-| <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   body
     .page-wrap
       include includes/header
       include includes/slider
       main
-        
+        .container
+          .specslider__container
+            .specslider
+              .specslider__wrapper
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-1.png', width='120', height='120')
+                    h2.specslider__item__title Офисные<br>принадлежности
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-2.png', width='120', height='120')
+                    h2.specslider__item__title Подарочная<br>продукция
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-1.png', width='120', height='120')
+                    h2.specslider__item__title Офисные<br>принадлежности
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-2.png', width='120', height='120')
+                    h2.specslider__item__title Подарочная<br>продукция
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-1.png', width='120', height='120')
+                    h2.specslider__item__title Офисные<br>принадлежности
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-2.png', width='120', height='120')
+                    h2.specslider__item__title Подарочная<br>продукция
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-1.png', width='120', height='120')
+                    h2.specslider__item__title Офисные<br>принадлежности
+                .specslider__item
+                  a(href='#')
+                    img(src='i/service-2.png', width='120', height='120')
+                    h2.specslider__item__title Подарочная<br>продукция
+            a.specslider__nav.specslider__nav--next(href='#')
+              i.fa.fa-angle-right
+            a.specslider__nav.specslider__nav--prev(href='#')
+              i.fa.fa-angle-left
       include includes/footer
     include includes/tail

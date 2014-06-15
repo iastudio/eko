@@ -22,6 +22,7 @@
 @import "ui";
 
 // Misc
+@import "slider";
 @import "forms";
 @import "lightbox";
 
@@ -88,7 +89,8 @@ a, input, textarea, .btn {
 	outline: none;
 }
 
-a, a:link, a:visited {
+//a, a:link, a:visited {
+a {
 	color: #000;
 	&:hover {
 		color: lighten(#000, 20%);

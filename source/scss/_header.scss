@@ -2,6 +2,8 @@ header {
 	padding: 32px 0;
 	height: 190px;
 	background: url('../i/header-bg.jpg') center center no-repeat #080b04;
+	position: relative;
+	z-index: 2;
 
 	nav {
 		height: 74px;
@@ -45,6 +47,7 @@ header {
 						height: auto;
 						padding: 18px 0 11px;
 						border-bottom: 7px solid #5E9611;
+						background-color: #fff;
 						li {
 							background-color: #fff;
 							list-style: none;
