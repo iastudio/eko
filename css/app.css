@@ -748,16 +748,17 @@ header nav ul li.nav__listitem.dropdown .nav-block {
   -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.18);
   box-shadow: 0 0 35px rgba(0, 0, 0, 0.18);
   height: auto;
-  padding: 18px 0;
+  padding: 18px 0 11px;
+  border-bottom: 7px solid #5E9611;
 }
-/* line 47, ../scss/_header.scss */
+/* line 48, ../scss/_header.scss */
 header nav ul li.nav__listitem.dropdown .nav-block li {
   background-color: #fff;
   list-style: none;
   float: none;
   display: block;
 }
-/* line 53, ../scss/_header.scss */
+/* line 54, ../scss/_header.scss */
 header nav ul li.nav__listitem.dropdown .nav-block li a, header nav ul li.nav__listitem.dropdown .nav-block li a:link, header nav ul li.nav__listitem.dropdown .nav-block li a:visited {
   border-bottom: 1px solid #D1D1D1;
   padding: 13px 30px 13px 40px;
@@ -768,33 +769,33 @@ header nav ul li.nav__listitem.dropdown .nav-block li a, header nav ul li.nav__l
   text-decoration: none;
   line-height: 14px;
 }
-/* line 62, ../scss/_header.scss */
+/* line 63, ../scss/_header.scss */
 header nav ul li.nav__listitem.dropdown .nav-block li a:hover, header nav ul li.nav__listitem.dropdown .nav-block li a:link:hover, header nav ul li.nav__listitem.dropdown .nav-block li a:visited:hover {
   background-color: #f5f5f5;
 }
-/* line 68, ../scss/_header.scss */
+/* line 69, ../scss/_header.scss */
 header nav ul li.nav__listitem.dropdown .nav-block li:last-child a, header nav ul li.nav__listitem.dropdown .nav-block li:last-child a:link, header nav ul li.nav__listitem.dropdown .nav-block li:last-child a:visited {
   border-bottom: none;
 }
-/* line 75, ../scss/_header.scss */
+/* line 76, ../scss/_header.scss */
 header nav ul li.nav__listitem:first-child {
   border-left: none;
 }
-/* line 77, ../scss/_header.scss */
+/* line 78, ../scss/_header.scss */
 header nav ul li.nav__listitem:first-child a.nav__item, header nav ul li.nav__listitem:first-child a.nav__item:link, header nav ul li.nav__listitem:first-child a.nav__item:visited {
   border-top-left-radius: 38px;
   border-bottom-left-radius: 38px;
 }
-/* line 82, ../scss/_header.scss */
+/* line 83, ../scss/_header.scss */
 header nav ul li.nav__listitem:last-child {
   border-right: none;
 }
-/* line 84, ../scss/_header.scss */
+/* line 85, ../scss/_header.scss */
 header nav ul li.nav__listitem:last-child a.nav__item, header nav ul li.nav__listitem:last-child a.nav__item:link, header nav ul li.nav__listitem:last-child a.nav__item:visited {
   border-top-right-radius: 38px;
   border-bottom-right-radius: 38px;
 }
-/* line 89, ../scss/_header.scss */
+/* line 90, ../scss/_header.scss */
 header nav ul li.nav__listitem a.nav__item, header nav ul li.nav__listitem a.nav__item:link, header nav ul li.nav__listitem a.nav__item:visited {
   display: block;
   width: 100%;
@@ -808,7 +809,7 @@ header nav ul li.nav__listitem a.nav__item, header nav ul li.nav__listitem a.nav
   text-shadow: 0 1px 0 #3a6702;
   padding-top: 26px;
 }
-/* line 103, ../scss/_header.scss */
+/* line 104, ../scss/_header.scss */
 header nav ul li.nav__listitem.active a.nav__item, header nav ul li.nav__listitem.active a.nav__item:link, header nav ul li.nav__listitem.active a.nav__item:visited, header nav ul li.nav__listitem:hover a.nav__item, header nav ul li.nav__listitem:hover a.nav__item:link, header nav ul li.nav__listitem:hover a.nav__item:visited {
   color: #fefefe;
   -moz-box-shadow: inset 0 0 21px #456f09, inset 0 0 44px 2px rgba(251, 247, 193, 0.22);
@@ -818,7 +819,7 @@ header nav ul li.nav__listitem.active a.nav__item, header nav ul li.nav__listite
   background-image: -webkit-linear-gradient(top, #599513 0%, #699b0f 100%);
   background-image: linear-gradient(to bottom, #599513 0%, #699b0f 100%);
 }
-/* line 113, ../scss/_header.scss */
+/* line 114, ../scss/_header.scss */
 header .header__logo, header .header__search, header .header__contacts {
   *zoom: 1;
   float: left;
@@ -844,30 +845,30 @@ header .header__logo:after, header .header__search:after, header .header__contac
 header .header__logo:last-child, header .header__search:last-child, header .header__contacts:last-child {
   margin-right: 0%;
 }
-/* line 117, ../scss/_header.scss */
+/* line 118, ../scss/_header.scss */
 header .header__contacts {
   padding-top: 12px;
 }
-/* line 120, ../scss/_header.scss */
+/* line 121, ../scss/_header.scss */
 header .header__contacts, header .header__contacts h1, header .header__contacts h2, header .header__contacts h3, header .header__contacts span, header .header__contacts a, header .header__contacts a:link, header .header__contacts a:visited {
   margin-bottom: 0;
   line-height: 1.2;
   color: #fff;
   text-shadow: 0 0 5px #7b9553;
 }
-/* line 126, ../scss/_header.scss */
+/* line 127, ../scss/_header.scss */
 header .header__contacts h1 {
   margin-bottom: 3px;
 }
-/* line 129, ../scss/_header.scss */
+/* line 130, ../scss/_header.scss */
 header .header__contacts a, header .header__contacts a:link, header .header__contacts a:visited {
   text-decoration: none;
 }
-/* line 132, ../scss/_header.scss */
+/* line 133, ../scss/_header.scss */
 header .header__contacts a:hover, header .header__contacts a:link:hover, header .header__contacts a:visited:hover {
   text-decoration: underline;
 }
-/* line 140, ../scss/_header.scss */
+/* line 141, ../scss/_header.scss */
 header .header__search input[type="text"] {
   width: 220px;
   height: 34px;
@@ -913,7 +914,7 @@ header .header__search input[type="text"] :-ms-input-placeholder {
   font-size: 12px;
   font-style: italic;
 }
-/* line 163, ../scss/_header.scss */
+/* line 164, ../scss/_header.scss */
 header .header__search input[type="text"] + label {
   position: relative;
   color: #acacac;
