@@ -43,7 +43,8 @@ header {
 						position: relative;
 						@include box-shadow(0 0 35px rgba(0,0,0,.18));
 						height: auto;
-						padding: 18px 0;
+						padding: 18px 0 11px;
+						border-bottom: 7px solid #5E9611;
 						li {
 							background-color: #fff;
 							list-style: none;
