@@ -1,6 +1,6 @@
 
 .btn, a.btn, input[type=submit] {
-	display: block;
+	display: inline-block;
 	text-align: center;
 	border-style: solid;
 	border: none;
@@ -31,6 +31,8 @@
 	@include box-shadow(0 3px 0 #e39303, inset 0 -1px 0 #f3b501);
 	@include background-image(linear-gradient(to bottom, #fbad00 0%, #f3d71d 100%));
 
+	margin-bottom: 18px;
+
 	// &:after {
 	//     content: '';
 	// 	width: 100%;
@@ -50,11 +52,17 @@
 	// }
 
 	&:hover {
+		color: #84620f;
 		@include background-image(linear-gradient(to bottom, #f3d71d 0%, #fbad00 100%));
 		&:active {
 			@include box-shadow(0 0 0 #e39303, inset 0 -1px 0 #f3b501);
 			top: 3px;
 		}
+	}
+	&.btn {
+		padding-top: 0;
+		padding-bottom: 0;
+		line-height: 41px;
 	}
 }
 

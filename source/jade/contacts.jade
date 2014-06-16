@@ -1,0 +1,38 @@
+- var active = 0
+- var pageName = 'Контакты'
+include includes/settings
+doctype html
+html(lang='ru').no-js
+  head
+    include includes/head
+    //- Uncomment for LiveReload
+    //- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  body
+    .page-wrap
+      include includes/header
+      main
+        .container
+          h1 Контакты
+          .breadcrumbs
+            ul
+              li: a(href="#") Главная
+              li: a(href="#") Контакты
+        .container
+          .col-1-2
+            h5 Адрес:
+            p г. Владивосток, ул Светланская 78б, оф 103
+            #map
+            h5 Телефоны:
+            p 8 (423) 277-66-22, 277-66-22
+            h5 E-mail:
+            p: a(href="mailto:office@ecoluxpaper.ru") office@ecoluxpaper.ru
+          .col-1-2
+            h1 Отправить сообщение
+            form
+              fieldset
+                input(type="text", placeholder="Ваше имя")
+                input(type="text", placeholder="E-mail")
+                textarea(placeholder="Комментарий")
+                input(type="submit", value="Отправить сообщение")
+        include includes/footer
+    include includes/tail

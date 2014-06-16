@@ -1,0 +1,78 @@
+- var active = 0
+- var pageName = 'Кружка для сублимации'
+include includes/settings
+doctype html
+html(lang='ru').no-js
+  head
+    include includes/head
+    //- Uncomment for LiveReload
+    //- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  body
+    .page-wrap
+      include includes/header
+      main
+        .container
+          aside
+            h2 Каталог товаров
+            nav
+              ul
+                li: a(href="#") Офисные принадлежности
+                li.active: a(href="#") Подарочная продукция
+                li: a(href="#") Бумага
+                li: a(href="#") Электроника
+          .content
+            h1 Кружка для сублимации
+            .breadcrumbs
+              ul
+                li: a(href="#") Главная
+                li: a(href="#") Каталог
+                li: a(href="#") Подарочная продукция
+            .container
+              .col-1-2.item__images
+                a(href="i/placeholder.jpg", data-lightbox="image-1").item__image--main
+                  img(src="i/placeholder.jpg", width="300", height="300")
+                a(href="i/placeholder.jpg", data-lightbox="image-2").item__image--small
+                  img(src="i/placeholder.jpg", width="140", height="140")
+                a(href="i/placeholder.jpg", data-lightbox="image-3").item__image--small
+                  img(src="i/placeholder.jpg", width="140", height="140")
+              .col-1-2.item__description
+                h3 Описание
+                p Благодаря длительной и усердной работе мы добились снижения цен! Теперь кружки для сублимации купить в нашем офисе стало еще удобнее. Если у Вас возникли вопросы, то можете задать их на форуме - сублимация на кружках.
+                h3 Стоимость
+                table
+                  tr
+                    th Количество
+                    th Цена
+                  tr
+                    td от 36 шт
+                    td 45 руб
+                  tr
+                    td от 180 шт
+                    td 42 руб
+                  tr
+                    td 504 и выше
+                    td 39 руб
+                  tr
+                    td 1008 и выше
+                    td уточните<br>у менеджера
+        .container
+          .well-contacts.well-contacts--full
+            .social
+              a.vk(href="#") В
+              a.fb(href="#"): i.fa.fa-facebook
+              a.tw(href="#"): i.fa.fa-twitter
+            h1 Контактная информация
+            .col-1-2
+              i.fa.fa-map-marker.fa-fw
+              h5 Адрес:
+              span г. Владивосток, ул Светланская 78б, оф 103
+              i.fa.fa-phone.fa-fw
+              h5 Телефон:
+              span 8 (423) 277-66-22, 277-66-22
+            .col-1-2
+              i.fa.fa-envelope-o.fa-fw
+              h5 E-mail:
+              span: a(href="mailto:office@ecoluxpaper.ru") office@ecoluxpaper.ru
+
+        include includes/footer
+    include includes/tail
