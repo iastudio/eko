@@ -41,6 +41,7 @@ body {
 	background: $bg-color;
 	line-height: 150%;
 	font-size: $text-size;
+	min-width: 960px;
 }
 
 a[href^=tel]{

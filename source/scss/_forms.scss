@@ -1,0 +1,102 @@
+
+.btn, a.btn, input[type=submit] {
+	display: block;
+	text-align: center;
+	border-style: solid;
+	border: none;
+	text-decoration: none;
+	position: relative;
+	clear: both;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+	text-align: center;
+	color: #84620f;
+	font-size: 14px;
+	font-weight: bold;
+	@include text-shadow(0 1px 0 #f9cd00);
+
+	padding: 12px 20px;
+	text-decoration: none;
+	position: relative;
+	clear: both;
+	
+	@include border-radius(20px);
+	@include background-clip(padding-box);
+	background-color: #fbad00;
+	@include box-shadow(0 3px 0 #e39303, inset 0 -1px 0 #f3b501);
+	@include background-image(linear-gradient(to bottom, #fbad00 0%, #f3d71d 100%));
+
+	// &:after {
+	//     content: '';
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	position: absolute;
+	// 	top: -8px;
+	// 	left: -8px;
+	// 	padding-right: 16px;
+	// 	padding-bottom: 16px;
+	// 	z-index: -1;
+
+	// 	@include border-radius(20px);
+	// 	@include background-clip(padding-box);
+	// 	background-color: #f5f5f3;
+	// 	@include box-shadow(inset 0 0 10px rgba(0,1,0,.2));
+
+	// }
+
+	&:hover {
+		@include background-image(linear-gradient(to bottom, #f3d71d 0%, #fbad00 100%));
+		&:active {
+			@include box-shadow(0 0 0 #e39303, inset 0 -1px 0 #f3b501);
+			top: 3px;
+		}
+	}
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea, .select {
+
+	@include placeholder {
+		color: #acacac;
+		font-size: 11px;
+		font-style: italic;
+	}
+
+	-webkit-appearance: none;
+	display: block;
+	margin-bottom: 18px;
+
+	width: 100%;
+	height: 41px;
+	padding: 14px 16px;
+
+	border: 1px solid rgba(22,59,95,.33);
+	@include box-shadow(inset 0 3px 3px rgba(2,3,3,.12));
+	@include border-radius(20px);
+	
+	color: #acacac;
+	font-size: 11px;
+	font-style: italic;
+
+}
+
+textarea {
+	height: 100px;
+}

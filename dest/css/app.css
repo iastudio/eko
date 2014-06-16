@@ -109,6 +109,167 @@ main {
 }
 
 /* line 7, ../scss/_else.scss */
+.form-contacts {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 31.33333%;
+  margin-left: 8.58333%;
+  margin-right: 3%;
+}
+/* line 197, ../scss/jeet/_grid.scss */
+.form-contacts:before, .form-contacts:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../scss/jeet/_grid.scss */
+.form-contacts:after {
+  clear: both;
+}
+/* line 49, ../scss/jeet/_grid.scss */
+.form-contacts:last-child {
+  margin-right: 0%;
+}
+/* line 10, ../scss/_else.scss */
+.form-contacts h1 {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* line 17, ../scss/_else.scss */
+.well-contacts {
+  *zoom: 1;
+  float: left;
+  display: inline;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 48.5%;
+  margin-left: 0%;
+  margin-right: 3%;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #699b11;
+  color: #FFF;
+  padding: 60px 48px;
+  padding-bottom: 40px;
+  position: relative;
+}
+/* line 197, ../scss/jeet/_grid.scss */
+.well-contacts:before, .well-contacts:after {
+  content: '';
+  display: table;
+}
+/* line 201, ../scss/jeet/_grid.scss */
+.well-contacts:after {
+  clear: both;
+}
+/* line 49, ../scss/jeet/_grid.scss */
+.well-contacts:last-child {
+  margin-right: 0%;
+}
+/* line 27, ../scss/_else.scss */
+.well-contacts .social {
+  position: absolute;
+  top: -3px;
+  right: 10px;
+}
+/* line 32, ../scss/_else.scss */
+.well-contacts .social a {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  -moz-box-shadow: inset 0 13px 8px -5px rgba(0, 1, 0, 0.3);
+  -webkit-box-shadow: inset 0 13px 8px -5px rgba(0, 1, 0, 0.3);
+  box-shadow: inset 0 13px 8px -5px rgba(0, 1, 0, 0.3);
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #1952a1;
+  text-align: center;
+  width: 30px;
+  height: 44px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #FFF;
+  line-height: 60px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+/* line 48, ../scss/_else.scss */
+.well-contacts .social a:hover {
+  text-decoration: none;
+  height: 58px;
+  line-height: 90px;
+}
+/* line 53, ../scss/_else.scss */
+.well-contacts .social a.vk {
+  background-color: #1A53A1;
+  font-size: 20px;
+}
+/* line 57, ../scss/_else.scss */
+.well-contacts .social a.fb {
+  background-color: #2D5181;
+}
+/* line 60, ../scss/_else.scss */
+.well-contacts .social a.tw {
+  background-color: #0F86C3;
+}
+/* line 66, ../scss/_else.scss */
+.well-contacts h1, .well-contacts a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* line 70, ../scss/_else.scss */
+.well-contacts h1 {
+  font-size: 24px;
+}
+/* line 73, ../scss/_else.scss */
+.well-contacts .fa {
+  display: inline-block;
+  font-size: 18px;
+}
+/* line 77, ../scss/_else.scss */
+.well-contacts h5 {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* line 82, ../scss/_else.scss */
+.well-contacts span {
+  display: block;
+  margin-left: 27px;
+  margin-bottom: 18px;
+}
+/* line 87, ../scss/_else.scss */
+.well-contacts a:hover {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* line 93, ../scss/_else.scss */
 .specslider__container {
   width: 100%;
   height: 200px;
@@ -116,19 +277,19 @@ main {
   position: relative;
 }
 
-/* line 14, ../scss/_else.scss */
+/* line 100, ../scss/_else.scss */
 .specslider {
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-/* line 19, ../scss/_else.scss */
+/* line 105, ../scss/_else.scss */
 .specslider .specslider__wrapper {
   width: 9999px;
   height: 100%;
   z-index: 3;
 }
-/* line 25, ../scss/_else.scss */
+/* line 111, ../scss/_else.scss */
 .specslider .specslider__wrapper .specslider__item {
   *zoom: 1;
   float: left;
@@ -156,28 +317,28 @@ main {
 .specslider .specslider__wrapper .specslider__item:last-child {
   margin-right: 0%;
 }
-/* line 31, ../scss/_else.scss */
+/* line 117, ../scss/_else.scss */
 .specslider .specslider__wrapper .specslider__item a {
   display: block;
   text-decoration: none;
   text-align: center;
 }
-/* line 35, ../scss/_else.scss */
+/* line 121, ../scss/_else.scss */
 .specslider .specslider__wrapper .specslider__item a:hover {
   opacity: 0.8;
 }
-/* line 40, ../scss/_else.scss */
+/* line 126, ../scss/_else.scss */
 .specslider .specslider__wrapper .specslider__item img {
   margin-bottom: 15px;
 }
-/* line 44, ../scss/_else.scss */
+/* line 130, ../scss/_else.scss */
 .specslider .specslider__wrapper .specslider__item .specslider__item__title {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
 }
 
-/* line 53, ../scss/_else.scss */
+/* line 139, ../scss/_else.scss */
 .specslider__nav {
   display: block;
   position: absolute;
@@ -190,16 +351,16 @@ main {
   font-size: 50px;
   color: #5B9512;
 }
-/* line 63, ../scss/_else.scss */
+/* line 149, ../scss/_else.scss */
 .specslider__nav:hover {
   opacity: 0.8;
 }
-/* line 66, ../scss/_else.scss */
+/* line 152, ../scss/_else.scss */
 .specslider__nav.specslider__nav--next {
   right: 0;
   text-indent: 2px;
 }
-/* line 70, ../scss/_else.scss */
+/* line 156, ../scss/_else.scss */
 .specslider__nav.specslider__nav--prev {
   left: 0;
   text-indent: -2px;
@@ -670,6 +831,173 @@ main {
   background-image: -moz-linear-gradient(top, #ffe3a1 0%, #e16909 100%);
   background-image: -webkit-linear-gradient(top, #ffe3a1 0%, #e16909 100%);
   background-image: linear-gradient(to bottom, #ffe3a1 0%, #e16909 100%);
+}
+
+/* line 2, ../scss/_forms.scss */
+.btn, a.btn, input[type=submit] {
+  display: block;
+  text-align: center;
+  border-style: solid;
+  border: none;
+  text-decoration: none;
+  position: relative;
+  clear: both;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
+  color: #84620f;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #f9cd00;
+  padding: 12px 20px;
+  text-decoration: none;
+  position: relative;
+  clear: both;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -moz-background-clip: padding;
+  -o-background-clip: padding-box;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  background-color: #fbad00;
+  -moz-box-shadow: 0 3px 0 #e39303, inset 0 -1px 0 #f3b501;
+  -webkit-box-shadow: 0 3px 0 #e39303, inset 0 -1px 0 #f3b501;
+  box-shadow: 0 3px 0 #e39303, inset 0 -1px 0 #f3b501;
+  background-image: -moz-linear-gradient(top, #fbad00 0%, #f3d71d 100%);
+  background-image: -webkit-linear-gradient(top, #fbad00 0%, #f3d71d 100%);
+  background-image: linear-gradient(to bottom, #fbad00 0%, #f3d71d 100%);
+}
+/* line 52, ../scss/_forms.scss */
+.btn:hover, a.btn:hover, input[type=submit]:hover {
+  background-image: -moz-linear-gradient(top, #f3d71d 0%, #fbad00 100%);
+  background-image: -webkit-linear-gradient(top, #f3d71d 0%, #fbad00 100%);
+  background-image: linear-gradient(to bottom, #f3d71d 0%, #fbad00 100%);
+}
+/* line 54, ../scss/_forms.scss */
+.btn:hover:active, a.btn:hover:active, input[type=submit]:hover:active {
+  -moz-box-shadow: 0 0 0 #e39303, inset 0 -1px 0 #f3b501;
+  -webkit-box-shadow: 0 0 0 #e39303, inset 0 -1px 0 #f3b501;
+  box-shadow: 0 0 0 #e39303, inset 0 -1px 0 #f3b501;
+  top: 3px;
+}
+
+/* line 61, ../scss/_forms.scss */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea, .select {
+  -webkit-appearance: none;
+  display: block;
+  margin-bottom: 18px;
+  width: 100%;
+  height: 41px;
+  padding: 14px 16px;
+  border: 1px solid rgba(22, 59, 95, 0.33);
+  -moz-box-shadow: inset 0 3px 3px rgba(2, 3, 3, 0.12);
+  -webkit-box-shadow: inset 0 3px 3px rgba(2, 3, 3, 0.12);
+  box-shadow: inset 0 3px 3px rgba(2, 3, 3, 0.12);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  color: #acacac;
+  font-size: 11px;
+  font-style: italic;
+}
+/* line 4, ../scss/app.scss */
+input[type="text"] ::-webkit-input-placeholder,
+input[type="password"] ::-webkit-input-placeholder,
+input[type="date"] ::-webkit-input-placeholder,
+input[type="datetime"] ::-webkit-input-placeholder,
+input[type="datetime-local"] ::-webkit-input-placeholder,
+input[type="month"] ::-webkit-input-placeholder,
+input[type="week"] ::-webkit-input-placeholder,
+input[type="email"] ::-webkit-input-placeholder,
+input[type="number"] ::-webkit-input-placeholder,
+input[type="search"] ::-webkit-input-placeholder,
+input[type="tel"] ::-webkit-input-placeholder,
+input[type="time"] ::-webkit-input-placeholder,
+input[type="url"] ::-webkit-input-placeholder,
+textarea ::-webkit-input-placeholder, .select ::-webkit-input-placeholder {
+  color: #acacac;
+  font-size: 11px;
+  font-style: italic;
+}
+/* line 5, ../scss/app.scss */
+input[type="text"] :-moz-placeholder,
+input[type="password"] :-moz-placeholder,
+input[type="date"] :-moz-placeholder,
+input[type="datetime"] :-moz-placeholder,
+input[type="datetime-local"] :-moz-placeholder,
+input[type="month"] :-moz-placeholder,
+input[type="week"] :-moz-placeholder,
+input[type="email"] :-moz-placeholder,
+input[type="number"] :-moz-placeholder,
+input[type="search"] :-moz-placeholder,
+input[type="tel"] :-moz-placeholder,
+input[type="time"] :-moz-placeholder,
+input[type="url"] :-moz-placeholder,
+textarea :-moz-placeholder, .select :-moz-placeholder {
+  color: #acacac;
+  font-size: 11px;
+  font-style: italic;
+}
+/* line 6, ../scss/app.scss */
+input[type="text"] ::-moz-placeholder,
+input[type="password"] ::-moz-placeholder,
+input[type="date"] ::-moz-placeholder,
+input[type="datetime"] ::-moz-placeholder,
+input[type="datetime-local"] ::-moz-placeholder,
+input[type="month"] ::-moz-placeholder,
+input[type="week"] ::-moz-placeholder,
+input[type="email"] ::-moz-placeholder,
+input[type="number"] ::-moz-placeholder,
+input[type="search"] ::-moz-placeholder,
+input[type="tel"] ::-moz-placeholder,
+input[type="time"] ::-moz-placeholder,
+input[type="url"] ::-moz-placeholder,
+textarea ::-moz-placeholder, .select ::-moz-placeholder {
+  color: #acacac;
+  font-size: 11px;
+  font-style: italic;
+}
+/* line 7, ../scss/app.scss */
+input[type="text"] :-ms-input-placeholder,
+input[type="password"] :-ms-input-placeholder,
+input[type="date"] :-ms-input-placeholder,
+input[type="datetime"] :-ms-input-placeholder,
+input[type="datetime-local"] :-ms-input-placeholder,
+input[type="month"] :-ms-input-placeholder,
+input[type="week"] :-ms-input-placeholder,
+input[type="email"] :-ms-input-placeholder,
+input[type="number"] :-ms-input-placeholder,
+input[type="search"] :-ms-input-placeholder,
+input[type="tel"] :-ms-input-placeholder,
+input[type="time"] :-ms-input-placeholder,
+input[type="url"] :-ms-input-placeholder,
+textarea :-ms-input-placeholder, .select :-ms-input-placeholder {
+  color: #acacac;
+  font-size: 11px;
+  font-style: italic;
+}
+
+/* line 100, ../scss/_forms.scss */
+textarea {
+  height: 100px;
 }
 
 /* line 39, ../scss/_lightbox.scss */
@@ -1168,8 +1496,26 @@ header .header__search input[type="text"] :-ms-input-placeholder {
 header .header__search input[type="text"] + label {
   position: relative;
   color: #acacac;
-  left: -210px;
+  left: 12px;
+  top: -48px;
   font-size: 14px;
+}
+
+/* line 1, ../scss/_footer.scss */
+footer {
+  height: 100px;
+  margin-top: 110px;
+  line-height: 1.2;
+}
+/* line 5, ../scss/_footer.scss */
+footer .container {
+  padding-top: 30px;
+  border-top: 5px solid #f5f5f3;
+}
+/* line 9, ../scss/_footer.scss */
+footer .logo-iastudio {
+  margin-right: 5px;
+  float: left;
 }
 
 /* line 33, ../scss/app.scss */
@@ -1185,66 +1531,67 @@ body {
   background: #fdfdfc;
   line-height: 150%;
   font-size: 16px;
+  min-width: 960px;
 }
 
-/* line 46, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 a[href^=tel] {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 57, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 #page-wrap {
   overflow: hidden;
 }
 
-/* line 61, ../scss/app.scss */
+/* line 62, ../scss/app.scss */
 h1, h2, h3, h4 {
   color: #000;
   font-weight: 200;
   margin-bottom: 30px;
 }
 
-/* line 68, ../scss/app.scss */
+/* line 69, ../scss/app.scss */
 h1 {
   font-size: 30px;
 }
 
-/* line 72, ../scss/app.scss */
+/* line 73, ../scss/app.scss */
 p {
   line-height: 120%;
 }
 
-/* line 76, ../scss/app.scss */
+/* line 77, ../scss/app.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 80, ../scss/app.scss */
+/* line 81, ../scss/app.scss */
 .right {
   float: right !important;
 }
 
-/* line 84, ../scss/app.scss */
+/* line 85, ../scss/app.scss */
 .left {
   float: left !important;
 }
 
-/* line 88, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 a, input, textarea, .btn {
   outline: none;
 }
 
-/* line 93, ../scss/app.scss */
+/* line 94, ../scss/app.scss */
 a {
   color: #000;
 }
-/* line 95, ../scss/app.scss */
+/* line 96, ../scss/app.scss */
 a:hover {
   color: #333333;
 }
 
-/* line 100, ../scss/app.scss */
+/* line 101, ../scss/app.scss */
 .lbox {
   display: block;
   border: 9px solid #fff;
@@ -1252,12 +1599,12 @@ a:hover {
   -webkit-box-shadow: 1px 1px 0 0 #96c4ea;
   box-shadow: 1px 1px 0 0 #96c4ea;
 }
-/* line 105, ../scss/app.scss */
+/* line 106, ../scss/app.scss */
 .lbox:hover {
   opacity: 0.9;
 }
 
-/* line 110, ../scss/app.scss */
+/* line 111, ../scss/app.scss */
 .container {
   position: relative;
   z-index: 1;

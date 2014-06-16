@@ -4,6 +4,92 @@ main {
 	padding-top: 60px;
 }
 
+.form-contacts {
+	@include col(4/12, $offset: 1/12);
+
+	h1 {
+		color: #000;
+		font-size: 24px;
+		font-weight: bold;
+	}
+}
+
+.well-contacts {
+	@include col(6/12);
+	@include border-radius(20px);
+	@include background-clip(padding-box);
+	background-color: #699b11;
+	color: #FFF;
+	padding: 60px 48px;
+	padding-bottom: 40px;
+	position: relative;
+
+	.social {
+		position: absolute;
+		top: -3px;
+		right: 10px;
+
+		a {
+			display: block;
+			float: left;
+			margin-right: 10px;
+			@include box-shadow(inset 0 13px 8px -5px rgba(0, 1, 0, 0.3));
+			@include background-clip(padding-box);
+			background-color: #1952a1;
+			text-align: center;
+			width: 30px; height: 44px;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			color: #FFF;
+			line-height: 60px;
+			@include transition-property(all);
+			@include transition-duration(.1s);
+			@include transition-timing-function(ease-in);
+			&:hover {
+				text-decoration: none;
+				height: 58px;
+				line-height: 90px;
+			}
+			&.vk {
+				background-color: #1A53A1;
+				font-size: 20px;
+			}
+			&.fb {
+				background-color: #2D5181;
+			}
+			&.tw {
+				background-color: #0F86C3;
+			}
+		}
+	}
+
+	h1, a {
+		color: #FFF;
+		text-decoration: none;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	.fa {
+		display: inline-block;
+		font-size: 18px;
+	}
+	h5 {
+		display: inline-block;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	span {
+		display: block;
+		margin-left: 27px;
+		margin-bottom: 18px;
+	}
+	a:hover {
+		color: #FFF;
+		text-decoration: underline;
+	}
+}
+
 .specslider__container {
 	width: 100%;
 	height: 200px;
