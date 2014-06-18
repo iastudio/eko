@@ -1,77 +1,4 @@
 
-///////////////////
-//  SPEC-SLIDER  //
-///////////////////
-
-(function(){
-
-    ymaps.ready( function() {
-        var myMap = new ymaps.Map('map', {
-                center: [43.114621, 131.909083],
-                zoom: 17,
-                controls: []
-            }),
-            myPlacemark = new ymaps.Placemark([43.114621, 131.909083], {
-                balloonContentHeader: "Эколюкс",
-                balloonContentBody: "г. Владивосток, ул Светланская 78б, оф 103",
-                balloonContentFooter: "8 (423) 277-66-22, 277-66-22",
-                hintContent: "Эколюкс"
-            }, {
-                preset: "islands#dotCircleIcon",
-                iconColor: '#669a11'
-            });
-        myMap.geoObjects.add(myPlacemark);
-    });
-
-})();
-
-
-///////////////////
-//  SPEC-SLIDER  //
-///////////////////
-
-
-(function(){
-
-    var easing = "easeInOutSine";
-    $('.specslider__nav').on( 'click', function( event ) {
-        //debugger;
-        var $this = $(this);
-        var $inner = $this.parent().parent().find('.specslider__wrapper');
-        var maxCount = $inner.find('.specslider__item').length-4;
-        if ($inner.attr('data-count') == undefined)
-            $inner.attr('data-count', 0);
-        var count = parseInt($inner.attr('data-count'));
-        var marg = parseInt($inner.css('margin-left'));
-        var width = parseInt($inner.find('.specslider__item').css('width'));
-
-        event.preventDefault();
-        if ($inner.is(':animated')) {return;}
-        
-        if ( $this.hasClass("specslider__nav--prev") ) {
-            if (count <= 0) {
-                return;
-            } else {
-                marg = marg+width;
-                count -= 1;
-            }
-        } else if (count < maxCount) {
-            marg = marg-width;
-            count += 1;
-        }
-
-        $inner.animate({
-            marginLeft: marg+'px'
-        }, {
-          duration: 500,
-          easing: easing
-        });
-
-        $inner.attr('data-count', count);
-        
-    });
-})();
-
 /////////////////
 //    SLIDER   //
 /////////////////
@@ -121,6 +48,81 @@
         });
     });
 
+})();
+
+///////////
+//  MAP  //
+///////////
+
+(function(){
+
+    if (document.getElementById('map')) {
+        ymaps.ready( function() {
+            var myMap = new ymaps.Map('map', {
+                    center: [43.114621, 131.909083],
+                    zoom: 17,
+                    controls: []
+                }),
+                myPlacemark = new ymaps.Placemark([43.114621, 131.909083], {
+                    balloonContentHeader: "Эколюкс",
+                    balloonContentBody: "г. Владивосток, ул Светланская 78б, оф 103",
+                    balloonContentFooter: "8 (423) 277-66-22, 277-66-22",
+                    hintContent: "Эколюкс"
+                }, {
+                    preset: "islands#dotCircleIcon",
+                    iconColor: '#669a11'
+                });
+            myMap.geoObjects.add(myPlacemark);
+        });
+    }
+
+})();
+
+
+///////////////////
+//  SPEC-SLIDER  //
+///////////////////
+
+
+(function(){
+
+    var easing = "easeInOutSine";
+    $('.specslider__nav').on( 'click', function( event ) {
+        //debugger;
+        var $this = $(this);
+        var $inner = $this.parent().parent().find('.specslider__wrapper');
+        var maxCount = $inner.find('.specslider__item').length-4;
+        if ($inner.attr('data-count') == undefined)
+            $inner.attr('data-count', 0);
+        var count = parseInt($inner.attr('data-count'));
+        var marg = parseInt($inner.css('margin-left'));
+        var width = parseInt($inner.find('.specslider__item').css('width'));
+
+        event.preventDefault();
+        if ($inner.is(':animated')) {return;}
+        
+        if ( $this.hasClass("specslider__nav--prev") ) {
+            if (count <= 0) {
+                return;
+            } else {
+                marg = marg+width;
+                count -= 1;
+            }
+        } else if (count < maxCount) {
+            marg = marg-width;
+            count += 1;
+        }
+
+        $inner.animate({
+            marginLeft: marg+'px'
+        }, {
+          duration: 500,
+          easing: easing
+        });
+
+        $inner.attr('data-count', count);
+        
+    });
 })();
 
 

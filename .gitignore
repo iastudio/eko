@@ -46,3 +46,5 @@ node_modules
 sftp-config.json
 
 .sublime-grunt.cache
+
+index.php
